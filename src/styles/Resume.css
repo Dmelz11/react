@@ -1,0 +1,49 @@
+h4 {
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0px;
+}
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0px;
+}
+
+.skills {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    margin-left: 0px;
+
+}
+.contact {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+a{
+    color: white;
+    margin-top: 0px;
+}
+.page-body {
+    text-align: left;
+    margin-top: 0px;
+
+}
+.line {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 5px;
+    background-color: white;
+}
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 40px;
+}
+.date {
+    text-align: left;
+}
+.projects {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    margin-top: 0px;
+}

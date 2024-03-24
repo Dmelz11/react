@@ -1,0 +1,9 @@
+a:link {
+    text-decoration: none;
+    color: white;
+}
+body {
+    background-color: rgb(9, 10, 9);
+    color: rgb(213, 198, 198);
+    padding: 30px
+}
