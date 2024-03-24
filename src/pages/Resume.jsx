@@ -42,25 +42,25 @@ export default function Resume() {
           <br></br>
           <br></br> 
           <ul className="projects">
-            <h4>React Portfolio</h4>• <a href="https://cheery-dragon-5ec7af.netlify.app/">Porfolio Link</a><br></br>
+            <h4>React Portfolio</h4><br></br>• <a href="https://cheery-dragon-5ec7af.netlify.app/">Porfolio Link</a><br></br>
               This project is a single page application using React.js. I used the react components to manage the application state
               and  to pass data through the app. By importing the React Router I added client-side routing allowing the user to
               bookmark the URLs and use the browsers forward and back navigation. I connected some of my projects to the porfolio
               page allowing the user to access the deployed sites and Github repositories by their associated links.<br></br>
             <br></br>
-            <h4>Work-Day Scheduler</h4>• <a href="https://dmelz11.github.io/work-day-calendar/">Scheduling App Link</a><br></br>
+            <h4>Work-Day Scheduler</h4><br></br>• <a href="https://dmelz11.github.io/work-day-calendar/">Scheduling App Link</a><br></br>
               This is a simple calendar application that allows the user to schedule events for a typical workday. It uses
               jQuery to update the HTML and CSS dynamically in the  browser and employs a third-party API call to the Day.js
               library to display the current time and date.<br></br>
             <br></br>
-            <h4>Clean Air API</h4>• <a href="https://jaretdesanti.github.io/Air_Quality_Website/">Air Quality Link</a><br></br>
+            <h4>Clean Air API</h4><br></br>• <a href="https://jaretdesanti.github.io/Air_Quality_Website/">Air Quality Link</a><br></br>
               This was my first group project so much of the focus was on employing the Agile development model,
               working as a team on our feature branches and creating pull requests to review our changes before merging
               to the main branch. This project also helped develope an understanding of the Github workflow by opening
               issues to assign tasks and accountability. Then initializing a project and using Kanban to track the
               progress of the project and the team members work.<br></br>
             <br></br>
-            <h4>E-commerce App</h4>• <a href="https://github.com/Dmelz11/e-commerce-ORM">Repo Link</a><br></br>
+            <h4>E-commerce App</h4><br></br>• <a href="https://github.com/Dmelz11/e-commerce-ORM">Repo Link</a><br></br>
               Although this application does not have a front end and therefore is not deployed, I decided to include
               it because it utilizes so many important features necessary for creating a functional E-commerce backend.
               I used Express.js and Sequelize to generate the ORM functions on the MySQL database and password hashing
