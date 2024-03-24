@@ -32,7 +32,7 @@ export default function Work() {
       img: "https://github.com/Dmelz11/Photos/assets/143745882/0fc7969d-3418-42f7-b58b-d73dea042b60",
       text:"This project used the Express.js server in the back end to handle the GET and POST http requests methods for creating and updating the data stored in a JSON file.",
       github: "https://github.com/Dmelz11/note-taker",
-      deployed: "",
+      deployed: "https://blooming-dusk-36091-c946c9a92ba5.herokuapp.com/",
       imgAlt: " Screenshot note taker"
     },
     {
