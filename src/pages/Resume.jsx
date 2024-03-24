@@ -12,12 +12,11 @@ export default function Resume() {
         <hr className="line"></hr>
         <p className="contact">Phone: 541-500-9142  PO Box Brookings, OR 97415</p>
         <p className="text-center">
-          <a href="mailto: david@greensprings.us">Email |</a>
+          <a href="mailto: david@greensprings.us">Email • </a>
           <a href="https://github.com/Dmelz11">
-            Github |
-          </a>
+             Github • </a>
           <a href="https://www.linkedin.com/in/david-melendez-a03759293/">
-            Linkedin
+             Linkedin
           </a>
         </p>
       </div>
