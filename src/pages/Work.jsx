@@ -12,7 +12,7 @@ export default function Work() {
       imgAlt: "Screenshot Clean Air",
     },
     {
-      name: "Project2",
+      name: "Project 2",
       img: "https://github.com/Dmelz11/Photos/assets/143745882/978beed4-7668-496f-b99f-e554c4c4c707",
       text: "The Book Cub Blog: This is another team project focusing on collaborative development through the Agile software development model. The back end includes networking with servers, databases and advanced APIs using User Authentication. This project followed an MVC folder structure and is deployed to Heroku. ",
       github: "https://github.com/Dmelz11/book_club_blog_p2",
@@ -38,7 +38,7 @@ export default function Work() {
     {
       name: "E-Commerce",
       img: "https://github.com/Dmelz11/Photos/assets/143745882/5936363d-9228-4f4e-9b19-f143ce6bf4f9",
-      text: "This back end application focuses on data collection using ORM. Using Sequelize methods to communicate wth MySQL to perform CRUD operations. This application is also deployed to Heroku.",
+      text: "This back end application focuses on data collection using ORM. Using Sequelize methods to communicate with MySQL to perform CRUD operations. This application is also deployed to Heroku.",
       github: "https://github.com/Dmelz11/e-commerce-ORM",
       deployed: "",
       imgAlt: "Screenshot E-Commerce"
