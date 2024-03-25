@@ -62,7 +62,7 @@ function ContactForm() {
 
         <form className="form" onSubmit={handleFormSubmit}>
           <div>
-            <div class="contact_form-div">
+            <div class="form-group">
               <label className="contact_form-tag">Name</label>
               <input
                 type="text"
@@ -104,7 +104,7 @@ function ContactForm() {
         )}
       </div>
       <br></br>
-      <a href="mailto: david@greensprings.us" className="contact_button">Contact Me: david@greensprings.us</a>
+      <p>Contact Me:<a href="mailto: david@greensprings.us" className="contact_button">david@greensprings.us</a></p>
     </form>
   );
 }
