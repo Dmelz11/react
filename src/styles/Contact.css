@@ -12,7 +12,8 @@ body {
     margin-left: 55px;
     margin-right: 55px;
 }
-button {
-    text-align: center;
+.contactContainer {
+    display: flex;
+    justify-content: center;
 
 }
