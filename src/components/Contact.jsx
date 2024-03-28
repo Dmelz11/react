@@ -1,5 +1,4 @@
-import { useState,useEffect, useRef } from "react";
-import React from "react";
+import { useState } from "react";
 import '../styles/Contact.css';
 
 //  importing a helper function that will check if the email is valid
@@ -8,105 +7,99 @@ import { validateEmail } from "../../utils/helpers";
 function ContactForm() {
   // Create state variables for the fields in the form
   // We are also setting their initial values to an empty string
-  const [email, setEmail] = useState("");
-  const [Name, setName] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
+  const [formState, setFormState] = useState({ name: '', email: '', message: ''});
+  const {name, email, message} = formState;
+  const [errorMessage, setErrorMessage] = useState('');
 
-  const count = useRef(0);
-
-  useEffect(()=> {
-    count.current = count.current +1;
-  });
-
-  const handleInputChange = (e) => {
-    // Getting the value and name of the input which triggered the change
-    const { target } = e;
-    const inputType = target.name;
-    const inputValue = target.value;
-
-    // Based on the input type, we set the state of either username or email
-  
+ // Getting the value and name of the input which triggered the change
+  const handleChange = (e) => {
    
-    if (inputType === "email") {
-      setEmail(inputValue);
+    if(e.target.name === 'email') {
+      const isValid = validateEmail(e.target.value);
+      console.log(isValid);
+      if (!isValid) {
+        setErrorMessage('Invalid email address');
+      } else {
+        setErrorMessage('');
+      }
     } else {
-      setName(inputValue);
-
+      if(!e.target.value.length) {
+        setErrorMessage(`A ${e.target.name} is required`)
+      }
     }
-  };
+     setFormState({...formState,[e.target.name]: e.target.value})
+     if (!errorMessage) {
+      setFormState({...formState, [e.target.name]: e.target.value});
+     }
+     console.log('errorMessage', errorMessage);
+    }
+  
 
-  const handleFormSubmit = (e) => {
+  const handleSubmit = (e) => {
     // This prevents the default behavior of the form
     e.preventDefault();
-
-    // First we check to see if the userName is field empty. If so we set an error message to be displayed on the page.
-    if (!validateEmail(email) || Name === "") {
-      setErrorMessage("Email or Name is invalid");
-      // We want to exit out of this code block if something is wrong so that the user can correct it
-      return;
-      // Then we check to see if the password is not valid. I
-    }
-
-   
-
-    // If everything goes according to plan, we want to clear out the input after a successful registration.
-    setName("");
-
-    setEmail("");
-  };
-
+    console.log(formState);
+  
+  }
   return (
     <form>
       <div className="page-body">
         <h1 className="heading">Let's Connect</h1>
 
-        <form className="form" onSubmit={handleFormSubmit}>
+        <form className="form" onSubmit={handleSubmit}>
           <div>
             <div class="form-group">
-              <label className="contact_form-tag">Name</label>
+              <label htmlFor="name" className="contact_form-tag">Name</label>
               <input
                 type="text"
-                class="form-control"
-                id="exampleFormControlInput1"
+                className="form-control"
+                defaultValue={name}
+                onBlur={handleChange}
                 placeholder="enter your name"
               />
             </div>
           </div>
           <br></br>
-          <div class="form-group">
-            <label for="exampleFormControlInput1">Email</label>
+          <div className="form-group">
+            <label htmlFor="email" className="contact_form-tag">Email</label>
             <input
               type="email"
-              class="form-control"
-              id="exampleFormControlInput2"
+              className="form-control"
+              defaultValue={email}
+              onBlur={handleChange}
               placeholder="email address"
             />
           </div>
           <br></br>
           <div class="form-group">
-            <label for="exampleFormControlTextarea1">Message</label>
+            <label htmlFor="message" className="contact_form-tag">Message</label>
             <textarea
-              class="form-control"
-              id="exampleFormControlTextarea1">
-           </textarea>
+               name="message"
+               className="form-control"
+               rows="5"
+               defaultValue={message}
+               onBlur={handleChange}
+              />          
           </div>
-          <br></br>
-         
-          <button type="submit" className="bg btn-primary ">
-          
-            Submit
-          </button>
-        </form>
-        {errorMessage && (
+          {errorMessage && (
           <div>
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
+          <br></br>
+         
+          <button type="submit" className="bg btn-primary ">         
+            Submit
+          </button>
+        </form>
+       
       </div>
       <br></br>
+      <div className='contactContainer'>
       <p>Contact Me:<a href="mailto: david@greensprings.us" className="contact_button">david@greensprings.us</a></p>
+      </div>
     </form>
   );
-}
+          }      
 
 export default ContactForm;
