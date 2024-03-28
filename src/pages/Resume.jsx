@@ -1,9 +1,18 @@
+import React from 'react';
+import resume from '../assets/resume.pdf';
 
-import "../styles/Resume.css"
 
-export default function Resume() {
+import "../styles/Resume.css";
+
+
+
+const Resume = () => {
+  
+
+
+
     return (
-      <><div className="heading">
+      <><div id="resumeContent">
 
 
         <h1 className="text-center">David Melendez</h1>
@@ -66,9 +75,16 @@ export default function Resume() {
               using bcrypt for secure user validation. Insomnia was used for the API testing.<br></br>
           </ul>
           <br></br>
-
+          <div className="btnContainer">
+          <button className='btn btn-lg'>
+          <a href={resume} download="resume"><i class= "download"></i>Download Resume</a>
+          </button>
+          </div>
+        
         </div></>
     
     );
   }
+
+  export default Resume;
   
