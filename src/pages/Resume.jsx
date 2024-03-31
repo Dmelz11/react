@@ -33,7 +33,8 @@ const Resume = () => {
           <h3>Education/Training</h3>
           <br></br>
           <ul className="date">09/2023 - 03/2024<br></br>
-          Recently completed an intensive six month course through UC Berkeley in Full Stack Web Development.
+          • Recently completed an intensive six month course through UC Berkeley in Full Stack Web Development.<br></br>
+          • Received EdX Certification for completing their AI/Prompt Engineering course.
           </ul>
           <br></br>
           <h3>Technical Skills</h3>
@@ -41,7 +42,7 @@ const Resume = () => {
           <ul className="skills">
             • Programming Languages: HTML/CSS, JavaScript and SQL<br></br>
             • Development Practices: Agile, OOP, MVC, ORM, CRUD and Responsive Web Design focusing on a mobile first approach.<br></br>
-            • Libraries/Frameworks: React.js, Express.js, Handlebars.js, Sequelize and Mongoose.<br></br>
+            • Libraries/Frameworks: React.js, Express.js, Handlebars.js, Sequelize, LangChain and Mongoose.<br></br>
             • Tools/Platforms: Git, Github, VScode, Heroku, Render, Netlify, Inquirer.js, MySQL Workbench and Insomnia.<br></br>
             • Databases: MongoDB and MySQL
           </ul>
