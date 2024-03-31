@@ -19,7 +19,7 @@ const Resume = () => {
         <br></br>
         <h5 className="text-center">Full Stack Web Developer</h5>
         <hr className="line"></hr>
-        <p className="contact">Phone: 541-500-9142  PO Box Brookings, OR 97415</p>
+        <p className="contact">Phone: 541-500-9142  PO Box 4208 Brookings, OR 97415</p>
         <p className="text-center">
           <a href="mailto: david@greensprings.us">Email • </a>
           <a href="https://github.com/Dmelz11">
