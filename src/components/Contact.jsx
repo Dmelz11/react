@@ -103,7 +103,7 @@ function ContactForm() {
         )}
           <br></br>
           <div className='contactContainer'>
-          <button type="submit" onSubmit={sendEmail} className="bg btn-primary">         
+          <button type="submit" onClick="sendEmail" className="bg btn-primary">         
             Send
           </button>
           </div>
