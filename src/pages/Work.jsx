@@ -8,7 +8,7 @@ export default function Work() {
       img: "https://github.com/Dmelz11/Photos/assets/143745882/8ce04901-264b-4937-8bf5-7a038662f279",
       text: "Clean Air API: This was a team project, focusing on creating a multiple server-side API application.This project also allowed our team to implement the Agile software development model while using gitbranch pull requests and code review prior to merging to the main project branch.",
       github:"https://github.com/Dmelz11/Air_Quality_Website",
-      deployed: "https://jarettdesanti.github.io/Air_Quality_Website/",
+      deployed: "",
       imgAlt: "Screenshot Clean Air",
     },
     {
@@ -16,7 +16,7 @@ export default function Work() {
       img: "https://github.com/Dmelz11/Photos/assets/143745882/978beed4-7668-496f-b99f-e554c4c4c707",
       text: "The Book Cub Blog: This is another team project focusing on collaborative development through the Agile software development model. The back end includes networking with servers, databases and advanced APIs using User Authentication. This project followed an MVC folder structure and is deployed to Heroku. ",
       github: "https://github.com/Dmelz11/book_club_blog_p2",
-      deployed: "https://github.com/sav-the-sag/book_club_blog_p2/deployments/vast-meadow-74622",
+      deployed: "",
       imgAlt: "Screenshot BC Blog",
     },
     {
@@ -32,7 +32,7 @@ export default function Work() {
       img: "https://github.com/Dmelz11/Photos/assets/143745882/0fc7969d-3418-42f7-b58b-d73dea042b60",
       text:"This project used the Express.js server in the back end to handle the GET and POST http requests methods for creating and updating the data stored in a JSON file.",
       github: "https://github.com/Dmelz11/note-taker",
-      deployed: "https://blooming-dusk-36091-c946c9a92ba5.herokuapp.com/",
+      deployed: "",
       imgAlt: " Screenshot note taker"
     },
     {
