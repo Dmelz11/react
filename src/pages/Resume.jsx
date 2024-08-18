@@ -51,7 +51,7 @@ const Resume = () => {
           <br></br>
           <br></br> 
           <ul className="projects">
-            <h4>React Portfolio</h4><br></br>• <a href="https://cheery-dragon-5ec7af.netlify.app/src">Porfolio Link</a><br></br>
+            <h4>React Portfolio</h4><br></br>• <a href="https://cheery-dragon-5ec7af.netlify.app/">Porfolio Link</a><br></br>
               This project is a single page application using React.js. I used the react components to manage the application state
               and  to pass data through the app. By importing the React Router I added client-side routing allowing the user to
               bookmark the URLs and use the browsers forward and back navigation. I connected some of my projects to the porfolio
